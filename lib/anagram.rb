@@ -5,6 +5,14 @@ class Anagram
 
   @@all = []
 
+  def self.all
+    @@all
+  end
+
+  def self.reset
+    self.all.clear
+  end
+
   def initialize(word)
     @word = word
     word
