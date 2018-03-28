@@ -5,8 +5,7 @@ class Anagram
 
   def initialize(word)
     @word = word
-    word = word.split
-    word
+    word.split
     binding.pry
   end
 
