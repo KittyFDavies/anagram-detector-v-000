@@ -17,7 +17,8 @@ class Anagram
       if item.sort == word_s.sort
         item = item.join
         @@all << item
-        
+      else
+        false
       end
     end
     @@all
