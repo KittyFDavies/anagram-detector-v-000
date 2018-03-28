@@ -8,14 +8,14 @@ class Anagram
   end
 
   def match(array)
-    word = word.scan(/\w/)
+    word = word.split("")
     array.each do |item|
-      item = item.split
-    #  if item.sort == word.sort
-    #    item
-    #  else
-    #    false
-    #  end
+      item = item.split("")
+      if item.sort == word.sort
+        item
+      else
+        false
+      end
     end
     binding.pry
   end
