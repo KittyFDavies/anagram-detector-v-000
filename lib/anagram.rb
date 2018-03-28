@@ -9,7 +9,7 @@ class Anagram
   end
 
   def match(array)
-    word = word.split("")
+    word_s = word.split("")
     word
   end
 
