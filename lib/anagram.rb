@@ -18,6 +18,7 @@ class Anagram
       if item == word_s
         item = item.join
         @@all << item
+      end
     end
   end
 end
