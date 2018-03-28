@@ -8,8 +8,8 @@ class Anagram
   end
 
   def match(array)
-    array = array.split
     array.each do |item|
+      item = item.split
       if item.sort == ana.sort
         item
       else
