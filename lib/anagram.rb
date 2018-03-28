@@ -18,7 +18,6 @@ class Anagram
         false
       end
     end
-    binding.pry
   end
 
 end
