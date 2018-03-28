@@ -19,6 +19,7 @@ class Anagram
   end
 
   def match(array)
+    self.reset
     word_s = word.split("").sort
     array.each do |item|
       item = item.split("").sort
