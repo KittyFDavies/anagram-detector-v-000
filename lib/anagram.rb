@@ -8,6 +8,7 @@ class Anagram
     word = word.split
     word
   end
+binding.pry
 
   def match(array)
     array.each do |item|
