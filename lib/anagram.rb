@@ -12,11 +12,11 @@ class Anagram
       item = item.split
       word = word.scan(/\w/)
       binding.pry
-      if item.sort == word.sort
-        item
-      else
-        false
-      end
+    #  if item.sort == word.sort
+    #    item
+    #  else
+    #    false
+    #  end
     end
     binding.pry
   end
