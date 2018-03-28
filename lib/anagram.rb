@@ -8,9 +8,9 @@ class Anagram
   end
 
   def match(array)
+    word = word.scan(/\w/)
     array.each do |item|
       item = item.split
-      word = word.scan(/\w/)
       binding.pry
     #  if item.sort == word.sort
     #    item
