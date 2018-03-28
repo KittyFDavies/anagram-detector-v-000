@@ -20,6 +20,7 @@ class Anagram
         false
       end
     end
+    @@all
   end
 
 end
