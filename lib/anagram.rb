@@ -13,10 +13,9 @@ class Anagram
   def match(array)
     array.each do |item|
       item = item.split("")
-      item = item.sort
+      return item = item.sort
       item = item.join
       @@all << item
     end
   end
-  @@all
 end
