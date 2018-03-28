@@ -3,8 +3,8 @@ require 'pry'
 class Anagram
   attr_accessor :word
 
-  def initialize
-    @word = word
+  def initialize(ana)
+    @word = ana
   end
 
   def match(array)
