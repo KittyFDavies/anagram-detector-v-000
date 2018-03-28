@@ -13,4 +13,5 @@ class Anagram
   def match(array)
     word_s = word.split("")
     word_s.sort
+  end
 end
