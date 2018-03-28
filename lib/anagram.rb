@@ -5,13 +5,13 @@ class Anagram
 
   def initialize(word)
     @word = word
-  #  binding.pry
   end
 
   def match(array)
     array.each do |item|
       item = item.split
-      word.scan(/\w/)
+      word = word.scan(/\w/)
+      binding.pry
       if item.sort == word.sort
         item
       else
