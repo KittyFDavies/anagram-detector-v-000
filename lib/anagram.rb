@@ -16,8 +16,6 @@ class Anagram
       item = item.split("")
       if item.sort == word_s.sort
         @@all << item
-      else
-        false
       end
     end
     @@all
