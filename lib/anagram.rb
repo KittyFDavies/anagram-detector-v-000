@@ -9,7 +9,6 @@ class Anagram
 
   def match(array)
     array = array.split
-    binding.pry
     array.each do |item|
       if item.sort == ana.sort
         item
@@ -17,6 +16,7 @@ class Anagram
         false
       end
     end
+    binding.pry
   end
 
 end
