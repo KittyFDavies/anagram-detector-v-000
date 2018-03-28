@@ -16,10 +16,10 @@ class Anagram
       item = item.split("")
       if item.sort == word_s.sort
         item = item.join
-        item
+        @@all << item
       end
     end
-
+    @@all
   end
 
 end
