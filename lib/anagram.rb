@@ -14,8 +14,8 @@ class Anagram
     array.each do |item|
       item = item.split("")
       item = item.sort
-      return item = item.join
-      @@all << item
+      item = item.join
+      return @@all << item
     end
   end
 end
