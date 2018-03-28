@@ -7,7 +7,7 @@ class Anagram
     @word = word
     word = word.scan(/\w/)
     word
-    binding.pry
+  #  binding.pry
   end
 
   def match(array)
