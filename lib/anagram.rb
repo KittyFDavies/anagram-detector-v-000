@@ -11,7 +11,12 @@ class Anagram
   end
 
   def match(array)
-    word_s = word.split("")
-    word_s.sort
+    array.each do |item|
+      item = item.split("")
+      item = item.sort
+      item = item.join
+      @@all << item
+    end
   end
+  @@all
 end

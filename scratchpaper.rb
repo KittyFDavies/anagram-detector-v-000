@@ -9,6 +9,3 @@ def match(array)
   end
   @@all
 end
-
-
-
