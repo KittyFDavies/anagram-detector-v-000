@@ -13,8 +13,8 @@ class Anagram
   def match(array)
     array.each do |item|
       item = item.split("")
-      return item = item.sort
-      item = item.join
+      item = item.sort
+      return item = item.join
       @@all << item
     end
   end
