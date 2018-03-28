@@ -7,8 +7,8 @@ class Anagram
     @word = word
     word = word.split
     word
+    binding.pry
   end
-binding.pry
 
   def match(array)
     array.each do |item|
