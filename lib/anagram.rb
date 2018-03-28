@@ -13,6 +13,7 @@ class Anagram
       else
         false
       end
+    end
   end
 
 end
