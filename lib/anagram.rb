@@ -7,11 +7,12 @@ class Anagram
 
   def initialize(word)
     @word = word
+    word
   end
 
   def match(array)
     word_s = word.split("")
-    array.collect do |item|
+    array.each do |item|
       item = item.split("")
       item = item.sort
       if item == word_s
@@ -19,5 +20,6 @@ class Anagram
         @@all << item
       end
     end
+    @@all
   end
 end
