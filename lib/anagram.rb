@@ -5,10 +5,10 @@ class Anagram
 
   def initialize(word)
     @word = word
+    word
   end
 
   def match(array)
-    word = self.new 
     word = word.split("")
     array.each do |item|
       item = item.split("")
