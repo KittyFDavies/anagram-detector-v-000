@@ -7,6 +7,7 @@ class Anagram
   end
 
   def match(array)
+    array = array.split
     array.each do |item|
       if item.sort == ana.sort
         item
