@@ -3,31 +3,21 @@ require 'pry'
 class Anagram
   attr_accessor :word
 
-  @@all = []
-
-  def self.all
-    @@all
-  end
-
-  def self.reset
-    self.all.clear
-  end
-
   def initialize(word)
     @word = word
     word
   end
 
   def match(array)
-    self.reset
-    word_s = word.split("").sort
+    answers = []
+    word_s = word.split("")
     array.each do |item|
-      item = item.split("").sort
-      if item == word_s
+      item = item.split("")
+      if item.sort == word_s.sort
         item = item.join
-        @@all << item
+        answers << item
       end
     end
-    @@all
+    answers
   end
 end
