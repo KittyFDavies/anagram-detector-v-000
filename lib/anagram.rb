@@ -3,6 +3,8 @@ require 'pry'
 class Anagram
   attr_accessor :word
 
+  @@all = []
+
   def initialize(word)
     @word = word
     word
@@ -13,7 +15,7 @@ class Anagram
     array.each do |item|
       item = item.split("")
       if item.sort == word_s.sort
-        item
+        @@all << item
       else
         false
       end
